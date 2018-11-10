@@ -1,0 +1,29 @@
+CREATE DATABASE SQLHelp;
+
+USE SQLHelp;
+
+CREATE TABLE salesman (
+  salesman_id numeric(10), 
+  name varchar(30), 
+  city varchar(30),
+  commision decimal(10,2)
+);
+
+CREATE TABLE orders (
+    order_no numeric(10),
+    purchase_amt decimal(8,2),
+    order_date date,
+  salesman_id numeric(10), 
+ cutsomer_id numeric(10)
+);
+
+CREATE TABLE customer (
+    
+ cutsomer_id numeric(10),
+ customer_name varchar(256),
+ city varchar(256),
+ grade varchar(3),
+ salesman_id numeric(10)
+);
+
+commit;
